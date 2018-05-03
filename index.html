@@ -17,6 +17,10 @@
             }
             .text_wrap {
                 transform: translate(0,30%);
+                -webkit-transform: translate(0,30%);
+                -moz-transform: translate(0,30%);
+                -ms-transform: translate(0,30%);
+                position: relative;
             }
             .clipper {
                 background: url(AutoCamp.jpg);
@@ -73,10 +77,10 @@
     <defs>
       <mask id="mask" x="0" y="0" width="100%" height="100%" >
         <rect x="0" y="0" width="100%" height="100%"/>
-        <g class="text_wrap">
-            <text x="0" y="0" class="text">mmmmmmmmm</text>
-            <text x="0" y="0.8em" class="text">aaaahhhhhhhh</text>
-            <text x="0" y="1.15em" class="text plus">coffee</text>
+        <g class="text_wrap" transform="translateY(30%);">
+            <text x="0" y="0.8em" class="text">mmmmmmmmm</text>
+            <text x="0" y="1.6em" class="text">aaaahhhhhhhh</text>
+            <text x="0" y="1.5em" class="text plus">coffee</text>
             
         </g>
       </mask>
